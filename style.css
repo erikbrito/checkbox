@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+}
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+li {
+  margin-bottom: 5px;
+  position: relative;
+}
+label {
+  cursor: pointer;
+}
+.line {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  bottom: -5px;
+  width: 1px;
+  background-color: #ccc;
+  transform: translateX(-50%);
+}
+.line-horizontal, .line-horizontal-main, .line-horizontal-Maurice, .line-horizontal-Joseph {
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 12px;
+  border-top: 1px solid #ccc;
+}
+.line-horizontal-main {
+  top: 3%;
+}
+.line-horizontal-Maurice {
+  top: 5%;
+}
+.line-horizontal-Joseph {
+  top: 23%;
+}
+.checkbox:checked + .custom-checkbox {
+  background-color: #007bff;
+}
+.checkbox:checked + .custom-checkbox::after {
+  content: "\2713";
+  font-size: 16px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
